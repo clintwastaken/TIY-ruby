@@ -31,7 +31,7 @@ movies << {
 }
 
 
-# get movie budgets, and push to array
+# get movie budgets, push to array, and titles of movies that match budget criteria
 budgets = []
   movies.each do |x|
     if x[:budget] < 100
@@ -42,7 +42,7 @@ budgets = []
 puts budgets
 
 
-# print movie titles that match budget criteria
+# print movie titles that have leonardo dicaprio in them
 leos = []
   movies.each do |y|
     if y[:stars].to_s.include? "Leonardo DiCaprio"
